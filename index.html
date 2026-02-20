@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#ffc9de">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Convite da Sophia 💖</title>
@@ -29,17 +29,21 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  min-height: 100vh;
-  background-color: #ffb3d9; /* Cor base para evitar o branco */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(135deg, #ffc9de 0%, #ffb3d9 100%);
+}
+
+body {
   font-family: 'Quicksand', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   position: relative;
-  margin: 0; /* Garante que não haja margens padrão */
 }
 
 /* Container principal */
