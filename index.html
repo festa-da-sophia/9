@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#ffc9de">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Convite da Sophia 💖</title>
 
 <!-- WhatsApp (Open Graph) -->
@@ -29,6 +31,7 @@
 
 body {
   min-height: 100vh;
+  background-color: #ffb3d9; /* Cor base para evitar o branco */
   background: linear-gradient(135deg, #ffc9de 0%, #ffb3d9 100%);
   font-family: 'Quicksand', sans-serif;
   display: flex;
@@ -36,19 +39,21 @@ body {
   align-items: center;
   overflow-x: hidden;
   position: relative;
+  margin: 0; /* Garante que não haja margens padrão */
 }
 
 /* Container principal */
 .container {
   width: 100%;
   max-width: 500px;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height em vez de height fixo */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background: transparent; /* Certifique-se que ele não tem fundo próprio branco */
 }
 
 .titulo-topo {
